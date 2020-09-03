@@ -9,7 +9,7 @@ let
     BaseDir "${cfg.dataDir}"
     AutoLoadPlugin ${boolToString cfg.autoLoadPlugin}
     Hostname "${config.networking.hostName}"
-    Interval ${cfg.interval}
+    Interval ${toString cfg.interval}
 
     LoadPlugin syslog
     <Plugin "syslog">
